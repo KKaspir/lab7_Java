@@ -22,6 +22,10 @@ class Student extends Person implements HasEmail, Cloneable{
         this.grades = grades;
     }
 
+    //метод получения id студента
+    public String getStudentID() {
+        return studentID;
+    }
     public double avgGrade() {
         if (grades.isEmpty()) {
             return 0.0;
